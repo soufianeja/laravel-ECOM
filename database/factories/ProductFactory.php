@@ -26,7 +26,7 @@ class ProductFactory extends Factory
             'old_price' => fake()->numberBetween($min = 100, $max = 100),
             'stock' => fake()->numberBetween($min = 0, $max = 100),
             'image' => fake()->imageUrl($width =640, $height = 480),
-            'category_id' => fake()->numberBetween($min = 0, $max = 10)
+            'category_id' => fake()->numberBetween($min = 1, $max = 10)
         ];
     }
 }
